@@ -49,7 +49,7 @@ const Images = ({slideInfo, prevIndex, slideIndex, imagesToShow}) => {
   }
 
   return(
-  <CarouselContainer className ="CarouselContainer">{slideInfo.map((item,id) => 
+  <CarouselContainer className ="CarouselContainer">{slideInfo.map((item,id) =>(
     <ImageContainer className="ImageContainer" key={id}>
       <Image className="Image" src={item.image} />
       <div style={textStyle}>{item.category}</div>
@@ -57,7 +57,9 @@ const Images = ({slideInfo, prevIndex, slideIndex, imagesToShow}) => {
       <div style={textStyle}>{`$${item.price} per person`}
       </div>
       <Rating starsToRender={item.reviews.rating} count={item.reviews.count}/>
-    </ImageContainer>)}
+    </ImageContainer>
+    )
+    )}
     </CarouselContainer>
   )
 }
