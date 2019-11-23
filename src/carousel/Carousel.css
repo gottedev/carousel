@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  height:100%;
+}
+
+.SliderWrapper{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Slider{
+display: flex;
+max-width: 80%;
+max-height: 100%;
+align-items: center;
+padding:50px;
+background:#f5f5f5;
+}
+
+
