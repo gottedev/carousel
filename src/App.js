@@ -5,6 +5,10 @@ import getSlideInfo from './carousel/api';
 const Carousel = lazy(()=> import('./carousel/Carousel'))
 
 function App() {
+
+  const isMobile = window.innerWidth < 550;
+
+  const showItems = isMobile ? 1 : 3;
   
   let [Images, setImages] = useState([]);
 
@@ -21,7 +25,7 @@ function App() {
     <div className="App">
       <Suspense fallback={<div>Loading...</div>}>
         <Carousel images={Images} // pass images and text content objects nested in array
-          imagesToShow={4} // enter how many images you want to show to the user in the slide
+          imagesToShow={showItems} // enter how many images you want to show to the user in the slide
         />
       </Suspense>
     </div>
