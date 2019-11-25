@@ -22,7 +22,7 @@ const Images = ({
   border-right:5px solid transparent;
   `;
 
-  const coolBoxKeyframes = keyframes`
+  const animateCarousel = keyframes`
   from {
     transform:translateX(${prevIndex}%);
   }
@@ -35,7 +35,7 @@ const Images = ({
   max-width:${100 / imagesToShow}%;
   min-width:${100 / imagesToShow}%;
   height:400px;
-  animation-name: ${coolBoxKeyframes};
+  animation-name: ${animateCarousel};
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;

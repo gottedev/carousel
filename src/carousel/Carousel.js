@@ -12,7 +12,7 @@ function Carousel({ images, imagesToShow }) {
   const [slideInfo, setSlideInfo] = useState([]); // to store initial array
   const [showPrevious, setShowPrevious] = useState(false);// to show hide previous arrow
   const [showNext, setShowNext] = useState(true);// to show hide next arrow
-  const [maintainBack, setMaintainBack] = useState([]);
+  const [previousSlides, setPreviousSlides] = useState([]);
 
 
   const previousArrowStyle = {
@@ -36,9 +36,9 @@ function Carousel({ images, imagesToShow }) {
       setShowNext(false);
     }
     const mutatedCurrentSlides = [...currentSlides];
-    const toMaintainBack = mutatedCurrentSlides.shift();
+    const removedElement = mutatedCurrentSlides.shift();
 
-    setMaintainBack([...maintainBack, toMaintainBack]);
+    setPreviousSlides([...previousSlides, removedElement]);
 
     setCurrentSlides(mutatedCurrentSlides); // to prevent next
     setShowPrevious(true);
@@ -54,11 +54,12 @@ function Carousel({ images, imagesToShow }) {
       return;
     }
 
-    const toMaintainNextArray = [...maintainBack];
-    const toMaintainNext = toMaintainNextArray.pop();
-    setCurrentSlides([...currentSlides, toMaintainNext]);
+    const mutatedPreviousSildes = [...previousSlides];
+    const removedElement = mutatedPreviousSildes.pop();
+    setCurrentSlides([...currentSlides, removedElement]);
+    // adding removed element to current array to make available when user clicks next
     setShowNext(true);
-    setPrevIndex(slideIndex);// to animate from last ledt point
+    setPrevIndex(slideIndex);// to animate from last left point
     setSlideIndex(slideIndex + 100);
   };
 
