@@ -14,6 +14,4 @@ const getSlideInfo = async () => {
 };
 
 
-
-
 export default getSlideInfo;

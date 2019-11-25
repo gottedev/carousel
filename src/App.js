@@ -1,6 +1,5 @@
 import React, {useState, useEffect, lazy, Suspense}from 'react';
 import getSlideInfo from './carousel/api';
-// import Carousel from './carousel/Carousel'
 
 const Carousel = lazy(()=> import('./carousel/Carousel'))
 
