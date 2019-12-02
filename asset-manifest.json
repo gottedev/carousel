@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/slider/static/css/main.ea5cf213.chunk.css",
-    "main.js": "/slider/static/js/main.5491f27f.chunk.js",
-    "main.js.map": "/slider/static/js/main.5491f27f.chunk.js.map",
-    "runtime-main.js": "/slider/static/js/runtime-main.bef2c24f.js",
-    "runtime-main.js.map": "/slider/static/js/runtime-main.bef2c24f.js.map",
+    "main.js": "/slider/static/js/main.e405ece9.chunk.js",
+    "main.js.map": "/slider/static/js/main.e405ece9.chunk.js.map",
+    "runtime-main.js": "/slider/static/js/runtime-main.5c421f1a.js",
+    "runtime-main.js.map": "/slider/static/js/runtime-main.5c421f1a.js.map",
     "static/js/2.efbeb546.chunk.js": "/slider/static/js/2.efbeb546.chunk.js",
     "static/js/2.efbeb546.chunk.js.map": "/slider/static/js/2.efbeb546.chunk.js.map",
     "static/js/3.c2251c6e.chunk.js": "/slider/static/js/3.c2251c6e.chunk.js",
     "static/js/3.c2251c6e.chunk.js.map": "/slider/static/js/3.c2251c6e.chunk.js.map",
-    "static/css/4.bdc56972.chunk.css": "/slider/static/css/4.bdc56972.chunk.css",
-    "static/js/4.6984452e.chunk.js": "/slider/static/js/4.6984452e.chunk.js",
-    "static/js/4.6984452e.chunk.js.map": "/slider/static/js/4.6984452e.chunk.js.map",
+    "static/css/4.8ada3356.chunk.css": "/slider/static/css/4.8ada3356.chunk.css",
+    "static/js/4.09c926ee.chunk.js": "/slider/static/js/4.09c926ee.chunk.js",
+    "static/js/4.09c926ee.chunk.js.map": "/slider/static/js/4.09c926ee.chunk.js.map",
     "index.html": "/slider/index.html",
-    "precache-manifest.f9089995b94eb489b31a12de66c488c7.js": "/slider/precache-manifest.f9089995b94eb489b31a12de66c488c7.js",
+    "precache-manifest.2e5246f49f8f8e35c3f6d086dc393f38.js": "/slider/precache-manifest.2e5246f49f8f8e35c3f6d086dc393f38.js",
     "service-worker.js": "/slider/service-worker.js",
-    "static/css/4.bdc56972.chunk.css.map": "/slider/static/css/4.bdc56972.chunk.css.map",
+    "static/css/4.8ada3356.chunk.css.map": "/slider/static/css/4.8ada3356.chunk.css.map",
     "static/css/main.ea5cf213.chunk.css.map": "/slider/static/css/main.ea5cf213.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.bef2c24f.js",
+    "static/js/runtime-main.5c421f1a.js",
     "static/js/2.efbeb546.chunk.js",
     "static/css/main.ea5cf213.chunk.css",
-    "static/js/main.5491f27f.chunk.js"
+    "static/js/main.e405ece9.chunk.js"
   ]
 }
