@@ -3,20 +3,22 @@ import getSlideInfo from './carousel/api';
 
 const Carousel = lazy(()=> import('./carousel/Carousel'))
 
-function App() {
+function App() {  
+  let [showItems, setShowItems] = useState(4)
 
-  const isMobile = window.innerWidth < 550;
-
-  const showItems = isMobile ? 1 : 3;
-  
   let [Images, setImages] = useState([]);
 
-  useEffect(() => {getSlideInfo().then(
+  useEffect(() => {
+    getSlideInfo().then(
     (data) => {
       let imageData = data.map(item => item)
       setImages(imageData);
     }
-  )}, [])
+    )
+  window.addEventListener('resize', ()=>{
+    setShowItems(window.innerWidth < 545 ? 1 : 4)
+  })
+}, [])
 
 
 

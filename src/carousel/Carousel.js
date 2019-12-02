@@ -28,7 +28,7 @@ function Carousel({ images, imagesToShow }) {
     outline: 'none',
   };
 
-  const performslideNext = () => { // to move forward in slide
+  const performSlideNext = () => { // to move forward in slide
     if (currentSlides.length <= imagesToShow) {
       return;
     }
@@ -46,7 +46,7 @@ function Carousel({ images, imagesToShow }) {
     setSlideIndex(slideIndex - 100);
   };
 
-  const performslidePrevious = () => { // / to move back in slide
+  const performSlidePrevious = () => { // / to move back in slide
     if ((Math.abs(slideIndex) - 100) === 0) {
       setShowPrevious(false);
     }
@@ -66,14 +66,18 @@ function Carousel({ images, imagesToShow }) {
   useEffect(() => {
     setSlideInfo(images);
     setCurrentSlides(images);
-  }, [images]);
+    setSlideIndex(0);
+    setPrevIndex(0);
+    setShowPrevious(false);
+    setShowNext(true);
+  }, [images, imagesToShow]);
 
 
   return (
     <div className="SliderWrapper">
       <div className="Slider">
         <PreviousArrow
-          performSlidePrevious={performslidePrevious}
+          performSlidePrevious={performSlidePrevious}
           previousArrowStyle={previousArrowStyle}
         />
         <Images
@@ -83,7 +87,7 @@ function Carousel({ images, imagesToShow }) {
           imagesToShow={imagesToShow}
         />
         <NextArrow
-          performSlideNext={performslideNext}
+          performSlideNext={performSlideNext}
           nextArrowStyle={nextArrowStyle}
         />
       </div>
