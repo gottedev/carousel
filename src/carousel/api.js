@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://www.mocky.io/v2/5dc56c993200005e00769a65';
+const BASE_URL = 'https://www.mocky.io/v2/5dc56c993200005e00769a65';
 
 
 const getSlideInfo = async () => {
@@ -12,8 +12,6 @@ const getSlideInfo = async () => {
   }
   return data;
 };
-
-
 
 
 export default getSlideInfo;
