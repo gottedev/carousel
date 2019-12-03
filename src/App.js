@@ -8,6 +8,8 @@ function App() {
 
   let [Images, setImages] = useState([]);
 
+  
+
   useEffect(() => {
     getSlideInfo().then(
     (data) => {
@@ -18,6 +20,7 @@ function App() {
   window.addEventListener('resize', ()=>{
     setShowItems(window.innerWidth < 545 ? 1 : 4)
   })
+  setShowItems(window.innerWidth < 545 ? 1 : 4)
 }, [])
 
 
